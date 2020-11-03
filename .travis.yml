@@ -16,7 +16,6 @@ before_install:
   - chmod +x ./kubectl
   - sudo mv ./kubectl /usr/local/bin/kubectl
 
-#building docker images
 install:
   - docker-compose -f Deploy/docker/docker-compose-build.yaml build --parallel
 
